@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" href="path-to/frameplayer.css">
+
+  <title>MVP Project</title>
+</head>
+<body>
+  <div ng-Controller="uploadController" ></div>
+  <p>Hey</p>
+  <form id        =  "uploadForm"
+     enctype   =  "multipart/form-data"
+     action    =  "/api/photo"
+     method    =  "post"
+  >
+  <input type="file" name="userVideo" />
+  <input type="submit" value="Upload Video" name="submit">
+  </form>
+
+  <button>Upload</button>
+</body>
+</html>

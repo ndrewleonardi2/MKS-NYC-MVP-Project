@@ -1,9 +1,16 @@
 {
-  "name": "mvppraject",
+  "name": "mvpproject",
   "version": "1.0.0",
   "description": "N/A",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "bookshelf": "^0.10.0",
+    "bower": "^1.7.9",
+    "browserify": "^13.0.1",
+    "express": "^4.14.0",
+    "knex": "^0.11.7",
+    "multer": "^1.1.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,4 +25,4 @@
     "url": "https://github.com/ndrewleonardi2/MKS-NYC-MVP-Project/issues"
   },
   "homepage": "https://github.com/ndrewleonardi2/MKS-NYC-MVP-Project#readme"
-} 
+}

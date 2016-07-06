@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='framed'>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <link rel="stylesheet" href="path-to/frameplayer.css">
-
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
   <title>MVP Project</title>
 </head>
 <body>
   <h1>MVP Project</h1>
-  <div id="my-player" class="frameplayer" data-vidsrc="videos/video.json"></div>
-  <video></video>
-  <p>Wadd up</p>
-  <p>Yo!</p>
+
+  <div ng-view></div>
+
+  <form
+     id        =  "uploadForm"
+     enctype   =  "multipart/form-data"
+     action    =  "/api/video"
+     method    =  "post"
+  >
+  <input type="file" name="userVideo" />
+  <input type="submit" value="Upload Video" name="submit">
+  </form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+<script src="application.js"></script>
+<script src="upload/uploadController.js"></script>
+<script src="player/player.js"></script>
 </body>
-<script src="path-to/frameplayer.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="app/server/server.js"></script>
+
 </html>
